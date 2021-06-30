@@ -96,6 +96,18 @@ html {
     display: block;
     position: absolute;
     top: 40px;
+    /* animation: fadein ease-in-out .5s; */
+    /* animation: fadein 1s timing-function delay iteration-count direction fill-mode; */
+    animation: Fadein linear .2s none normal;
+}
+
+@keyframes Fadein {
+    from {
+        top: 60px;
+    }
+    to {
+        top: 40px;
+    }
 }
 
 .list-child_item {
@@ -133,6 +145,16 @@ html {
     left: 220px;
     top: 0px;
     width: 215px;
+    animation: fadein ease-in-out .3s none normal;
+}
+
+@keyframes fadein {
+    from {
+        top: 10px;
+    }
+    to {
+        top: 0px;
+    }
 }
 
 .list-child_item a {
@@ -302,9 +324,7 @@ html {
 /* ----------------------SLIDER------------------- */
 
 .slider {
-    margin-top: 80px;
-    background-color: rgb(231, 243, 177);
-    padding: 10px 0;
+    margin-top: 90px;
 }
 
 .slider-width {
@@ -338,6 +358,10 @@ section {
     padding: 60px 100px;
 }
 
+section * {
+    margin: 0;
+}
+
 .img-content {
     position: relative;
 }
@@ -352,6 +376,10 @@ section {
 
 .best-seller {
     padding: 90px 0;
+}
+
+.best-seller img {
+    width: 100%;
 }
 
 .best-seller h1 {
